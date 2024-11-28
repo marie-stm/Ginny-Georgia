@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Ginny & Georgia</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header class="container">
+        <h1>Contact</h1>
+    </header>
+    <main>
+        <div class="form">
+            <h2>Formulaire de Contact</h2>
+            <form method="get" action="contact.html">
+                <fieldset>
+                    <label for="name">Nom Prénom :</label>
+                    <input type="text" name="name" id="name" required>
+                </fieldset>
+                <fieldset>
+                    <label for="email">E-mail :</label>
+                    <input type="email" name="email" id="email" required>
+                </fieldset>
+                <fieldset>
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" name="password" id="password" required>
+                </fieldset>
+                <fieldset>
+                    <label>Créneau de contact :</label>
+                    <input type="radio" name="contact_time" value="9h-12h"> 9h-12h
+                    <input type="radio" name="contact_time" value="14h-18h"> 14h-18h
+                </fieldset>
+                <fieldset>
+                    <legend>Notez la série de 1 à 5</legend>
+                    <label>Votre note :</label>
+                    <input type="radio" name="rating" value="1"> 1
+                    <input type="radio" name="rating" value="2"> 2
+                    <input type="radio" name="rating" value="3"> 3
+                    <input type="radio" name="rating" value="4"> 4
+                    <input type="radio" name="rating" value="5"> 5
+                </fieldset>
+                <fieldset>
+                    <label for="comment">Commentaire sur la série :</label>
+                    <textarea name="comment" id="comment" minlength="4" maxlength="200" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <input type="submit" value="Envoyer">
+                </fieldset>
+            </form>
+            
+            <h2>Candidature Spontanée</h2>
+            <form method="post" action="contact.html" enctype="multipart/form-data">
+                <fieldset>
+                    <label for="namePost">Nom Prénom :</label>
+                    <input type="text" name="namePost" id="namePost" required>
+                </fieldset>
+                <fieldset>
+                    <label for="emailPost">E-mail :</label>
+                    <input type="email" name="emailPost" id="emailPost" required>
+                </fieldset>
+                <fieldset>
+                    <label for="passwordPost">Mot de passe :</label>
+                    <input type="password" name="passwordPost" id="passwordPost" required>
+                </fieldset>
+                <fieldset>
+                    <label for="CV">Votre CV :</label>
+                    <input type="file" name="CV" id="CV" accept=".pdf, .doc, .docx">
+                </fieldset>
+                <fieldset>
+                    <input type="submit" value="Envoyer">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <footer class="container">
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="bande-annonce.html">Bande-annonce</a></li>
+                <li><a href="personnages.html">Personnages</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
